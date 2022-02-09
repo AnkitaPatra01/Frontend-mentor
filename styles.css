@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            font-family: 'Red Hot Display', sans-serif;
+}
+main {
+    background-color: #e0e8ff ;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+main .bg_pattern {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    top: 10rem;
+    -webkit-animation: bg-anim 1s ease-in-out;
+            animation: bg-anim 1s ease-in-out;
+}
+
+main .card {
+
+    margin: auto;
+    position: relative;
+    top: 50%;
+    -webkit-filter: drop-shadow(0.75em,0.75em,0.75em #7280a7);
+            filter: drop-shadow(0.75em,0.75em,ca0.75em  #7280a7);
+    -webkit-animation: card-anim 1s ease-in-out;
+
+            animation: card-anim 1s ease-in-out;
+
+}
+
+main .card_hero {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+
+}
+main .card .content {
+    text-align: center;
+    padding: 2.5rem 2.5rem 1rem 1rem;
+
+}
+main .card .content .card_header {
+    font-size: 2.5em;
+    font-weight: 900;
+}
+main .card .content .card_description {
+    font-size: 0.85em;
+    margin-top: 1em;
+    opacity: 0.5;
+    line-height: 1.5;
+}
+
+main .card .content .card_plan {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 1rem 1rem;
+    background-color: #f5f7ff;
+    width: 100%;
+    margin: 1.5rem 0;
+
+
+
+}
+main .card .content .card_plan_name span {
+    opacity: 0.5;
+    font-size: 1em;
+    display: grid;
+    column-gap: 50px;
+
+
+}
+
+main .card .content .card_plan_change {
+    color: #3829e0;
+    font-weight: 700;
+    margin-left: auto;
+    font-size: 0.9em;
+    -webkit-transition: 0.1s linear;
+}
+
+main .card_button {
+    color: #3829e0;
+}
+
+main .card .content .card_plan_change:hover {
+    opacity: 1;
+}
+
+
+@-webkit-keyframes bg-anim {
+    from {
+        top: -20rem;
+        opacity: 1;
+    }
+    to {
+        top: -10rem;
+        opacity: 1
+    }
+}
+
+@keyframes bg-anim {
+    from {
+        top: -20rem;
+        opacity: 0.5;
+    }
+    to {
+        top: -10rem;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes card-anim {
+    from {
+        top: 65%;
+        opacity: 1;
+    }
+    to {
+        top: 50%;
+        opacity: 0.5;
+    }
+
+}
+@media screen and (max-width: 375px){
+    .card {
+        width: 330px;
+    }
+    
+}
+/*# sourceMappingURL=main.css.map */
+
